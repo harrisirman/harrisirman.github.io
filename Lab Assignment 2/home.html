@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<title>Home</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="icon" href="image/h.jpg" type="image/jpg">
+<style>
+    body, h1,h2,h3,h4,h5,h6 {
+        font-family: "Montserrat", sans-serif
+    }
+
+    .w3-row-padding img {
+        margin-bottom: 12px
+    }
+
+    /* Set the width of the sidebar to 120px */
+    .w3-sidebar {
+        width: 120px;background: #222;
+    }
+
+    /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+    #main {
+        margin-left: 120px
+    }
+
+    /* Remove margins from "page content" on small screens */
+    @media only screen and (max-width: 600px) {
+        #main {margin-left: 0}
+        }
+
+  .button-50 {
+    appearance: button;
+    background-color: grey;
+    background-image: none;
+    border: 1px solid #000;
+    border-radius: 4px;
+    box-shadow: #fff 4px 4px 0 0,#000 4px 4px 0 1px;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: ITCAvantGardeStd-Bk,Arial,sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    margin: 0 5px 10px 0;
+    overflow: visible;
+    padding: 12px 40px;
+    text-align: center;
+    text-transform: none;
+    touch-action: manipulation;
+    user-select: none;
+    -webkit-user-select: none;
+    vertical-align: middle;
+    white-space: nowrap;
+  }
+
+  .button-50:focus {
+    text-decoration: none;
+  }
+
+  .button-50:hover {
+    text-decoration: none;
+  }
+
+  .button-50:active {
+    box-shadow: rgba(0, 0, 0, .125) 0 3px 5px inset;
+    outline: 0;
+  }
+
+  .button-50:not([disabled]):active {
+    box-shadow: #fff 2px 2px 0 0, #000 2px 2px 0 1px;
+    transform: translate(2px, 2px);
+  }
+
+  @media (min-width: 768px) {
+    .button-50 {
+      padding: 12px 50px;
+    }
+  }
+</style>
+<body class="w3-black">
+
+<!-- Icon Bar (Sidebar - hidden on small screens) -->
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+  <!-- Avatar image in top left corner -->
+  <img src="image/ayeh.jpg" style="width:100%">
+  <a href="home.html" class="w3-bar-item w3-button w3-padding-large w3-black">
+    <i class="fa fa-home w3-xxlarge"></i>
+    <p>HOME</p>
+  </a>
+  <a href="about.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-user w3-xxlarge"></i>
+    <p>PORTFOLIO</p>
+  </a>
+  <a href="gallery.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-eye w3-xxlarge"></i>
+    <p>GALLERY</p>
+  </a>
+  <a href="uitm.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-university w3-xxlarge"></i>
+    <p>UiTM</p>
+  </a>
+  <a href="contact.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-envelope w3-xxlarge"></i>
+    <p>CONTACT</p>
+  </a>
+</nav>
+
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+    <a href="home.html" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
+    <a href="about.html" class="w3-bar-item w3-button" style="width:25% !important">PORTFOLIO</a>
+    <a href="gallery.html" class="w3-bar-item w3-button" style="width:25% !important">GALLERY</a>
+    <a href="uitm.html" class="w3-bar-item w3-button" style="width:25% !important">UiTM</a>
+    <a href="contact.html" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
+  </div>
+</div>
+
+<!-- Page Content -->
+<div class="w3-padding-large" id="main">
+  <!-- Header/Home -->
+  <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+    <h1 class="w3-jumbo"><span class="w3-hide-small">I'm</span> Harris Irman.</h1>
+    <p>UiTM Computer Science Student.</p>
+    <img src="image/ayehh.jpeg" alt="boy" class="w3-image" width="992" height="1108">
+  </header>
+
+ 
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64 w3-center">
+     <!--Audio-->
+  <audio id="myAudio" controls autoplay>
+    <source src="image/au1.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <p id="demo"></p>
+<button onclick="getVolume()" type="button" class="button-50">What is the volume?</button>
+<button onclick="setHalfVolume()" type="button" class="button-50">Set volume to 0.2</button>
+<button onclick="setFullVolume()" type="button" class="button-50">Set volume to 1.0</button>
+</div>
+
+  <script>
+    var x = document.getElementById("myAudio");
+    
+    function getVolume() { 
+      document.getElementById("demo").innerHTML = x.volume;
+    } 
+    
+    function setHalfVolume() { 
+      x.volume = 0.2;
+    }
+       
+    function setFullVolume() { 
+      x.volume = 1.0;
+    } 
+  </script> 
+    
+    <!--End of Audio session-->
+
+
+
+
+
+  <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge w3-center">
+    <a href="https://www.facebook.com/harris.irman.9" target="_blank"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+    <a href="https://www.instagram.com/harris_irman/" target="_blank"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+    <a href="https://twitter.com/harris_irman" target="_blank"><i class="fa fa-twitter w3-hover-opacity"></i></a>
+    <a href="https://github.com/harrisirman" target="_blank"><i class="fa fa-github w3-hover-opacity"></i></a>
+    <a href="https://wa.link/d8f" target="_blank"><i class="fa fa-whatsapp w3-hover-opacity"></i></a>
+      <a href="https://msng.link/o/?harrisirm=tg" target="_blank"><i class="fa fa-telegram w3-hover-opacity"></i></a>
+      <a href="mailto:harrisayeh0@gmail.com"><i class="fa fa-envelope-open w3-hover-opacity"></i></a>
+  <!-- End footer -->
+  </footer>
+
+<!-- END PAGE CONTENT -->
+</div>
+
+</body>
+</html>

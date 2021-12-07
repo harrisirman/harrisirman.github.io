@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UiTM</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="image/h.jpg" type="image/jpg">
+<style>
+    body, h1,h2,h3,h4,h5,h6 {
+        font-family: "Montserrat", sans-serif
+    }
+
+    .w3-row-padding img {
+        margin-bottom: 12px
+    }
+
+    /* Set the width of the sidebar to 120px */
+    .w3-sidebar {
+        width: 120px;background: #222;
+    }
+
+    /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+    #main {
+        margin-left: 120px
+    }
+
+    /* Remove margins from "page content" on small screens */
+    @media only screen and (max-width: 600px) {
+        #main {margin-left: 0}
+        }
+</style>
+</head>
+
+<body class="w3-black">
+    <!-- Icon Bar (Sidebar - hidden on small screens) -->
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+    <!-- Avatar image in top left corner -->
+    <img src="image/ayeh.jpg" style="width:100%">
+    <a href="home.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+      <i class="fa fa-home w3-xxlarge"></i>
+      <p>HOME</p>
+    </a>
+    <a href="about.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+      <i class="fa fa-user w3-xxlarge"></i>
+      <p>PORTFOLIO</p>
+    </a>
+    <a href="gallery.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+      <i class="fa fa-eye w3-xxlarge"></i>
+      <p>GALLERY</p>
+    </a>
+    <a href="uitm.html" class="w3-bar-item w3-button w3-padding-large w3-black">
+      <i class="fa fa-university w3-xxlarge"></i>
+      <p>UiTM</p>
+    </a>
+    <a href="contact.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+      <i class="fa fa-envelope w3-xxlarge"></i>
+      <p>CONTACT</p>
+    </a>
+  </nav>
+  
+  <!-- Navbar on small screens (Hidden on medium and large screens) -->
+  <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+    <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+      <a href="home.html" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
+      <a href="about.html" class="w3-bar-item w3-button" style="width:25% !important">PORTFOLIO</a>
+      <a href="gallery.html" class="w3-bar-item w3-button" style="width:25% !important">GALLERY</a>
+      <a href="uitm.html" class="w3-bar-item w3-button" style="width:25% !important">UiTM</a>
+      <a href="contact.html" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
+    </div>
+  </div>
+  
+  <!-- Page Content -->
+  <div class="w3-padding-large" id="main">
+    <!-- Header/Home -->
+    <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+      <h1 class="w3-jumbo"><span class="w3-hide-small">U</span>iTM</h1>
+      <p>UiTM Computer Science Student.</p>
+      <img src="image/uitm.jpg" alt="boy" class="w3-image" width="992" height="1108">
+    </header>
+  
+
+
+
+
+
+
+
+
+
+  
+  
+  <!-- Timetable Section -->
+  <div class="w3-padding-64 w3-content" id="photos">
+    <h2 class="w3-text-light-grey">My Timetable</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+    <!-- Timetable -->
+    <h1 align="center"></h1>
+    <table border="5" cellspacing="0" align="center">
+        <!--<caption>Timetable</caption>-->
+        <tr>
+            <td align="center" height="50" 
+                width="100"><br>
+                <b>Day/Period</b></br>
+            </td>
+            <td align="center" height="50" 
+                width="100">
+                <b>I<br>8:00-9:50</b>
+            </td>
+            <td align="center" height="50" 
+                width="100">
+                <b>II<br>10:15-12:50</b>
+            </td>
+            <td align="center" height="50" 
+                width="100">
+                <b>III<br>12:15-2:15</b>
+            </td>
+            <td align="center" height="50" 
+                width="100">
+                <b>IV<br>2:30-4:30</b>
+            </td>
+            <td colspan="2" align="center" height="50" 
+                width="100">
+                <b>V<br>4:30-6:20</b>
+            </td>
+        </tr>
+
+        <tr>
+            <td align="center" height="50">
+                <b>Sunday</b></td>
+            <td align="center" height="50">CSC508</td>
+            <td align="center" height="50">CSC569</td>
+            <td align="center" height="50">CTU554</td>
+            <td colspan="3" align="center" height="50"></td>
+        </tr>
+
+        <tr>
+            <td align="center" height="50">
+                <b>Monday</b>
+            <td align="center" height="50">CSC577</td>    
+            <td align="center" height="50">CSC574</td>
+            <td align="center" height="50">CSC584</td>
+            <td colspan="3" align="center" height="50"></td>
+        </tr>
+
+        <tr>
+            <td align="center" height="50">
+                <b>Tuesday</b>
+            </td>
+            <td align="center" height="50">CSC569</td>
+            <td align="center" height="50"></td>
+            <td align="center" height="50">ELC650</td>
+            <td align="center" height="50">CSC508</td>
+            <td colspan="2" align="center" height="50">CSC508</td>
+            
+        </tr>
+
+        <tr>
+            <td align="center" height="50">
+                <b>Wednesday</b>
+            </td>
+            <td align="center" height="50"></td>
+            <td align="center" height="50">CSC577</td>
+            <td align="center" height="50">CTU554</td>
+            <td colspan="3" align="center" height="50"></td>
+           
+        </tr>
+
+        <tr>
+            <td align="center" height="50">
+                <b>Thursday</b>
+            </td>
+            <td align="center" height="50"></td>
+            <td align="center" height="50">TMC451</td>
+            <td align="center" height="50"></td>
+            <td align="center" height="50">CSC584</td>
+            <td colspan="2" align="center" height="50"></td>
+        </tr>
+    </table><br><br>
+  <!-- End Timetable Section -->
+  </div>
+
+    <!-- Expect result Section -->
+    <div class="w3-padding-64 w3-content" id="photos">
+    <h2 class="w3-text-light-grey">Expecting Result</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+  <h1 align="center"></h1>
+        <p><table cellpadding=5 cellspacing=10 width=0 border=0 bgcolor="#000080" align="center">
+        
+        <tr>
+            <th colspan=1 rowspan=1 bgcolor="#FFBB99">No</th>
+            <th colspan=1 rowspan=1 bgcolor="#C0C0C0">Course</th>
+            <th colspan=1 rowspan=1 bgcolor="#CCCCFF">Grade</th>
+       
+        </tr>
+    
+        <tr>
+            <th colspan=1 rowspan=1 bgcolor="#FFBB99">1</th>
+            <th colspan=1 rowspan=1 bgcolor="#C0C0C0">CSC508 - DATA STRUCTURES</th>
+            <th colspan=1 rowspan=1 bgcolor="#CCCCFF">A+</th>
+            
+        </tr>
+    
+        <tr>
+            <th colspan=1 rowspan=1 bgcolor="#FFBB99">2</th>
+            <th colspan=1 rowspan=1 bgcolor="#C0C0C0">CSC569 - PRINCIPLES OF COMPILERS</th>
+            <th colspan=1 rowspan=1 bgcolor="#CCCCFF">A+</th>
+            
+        </tr>
+    
+        <tr>
+            <th colspan=1 rowspan=1 bgcolor="#FFBB99">3</th>
+            <th colspan=1 rowspan=1 bgcolor="#C0C0C0">CSC574 - DYNAMIC WEB APPLICATION DEVELOPMENT</th>
+            <th colspan=1 rowspan=1 bgcolor="#CCCCFF">A+</th>
+        </tr>
+    
+        <tr>
+            <th colspan=1 rowspan=1 bgcolor="#FFBB99">4</th>
+            <th colspan=1 rowspan=1 bgcolor="#C0C0C0">CSC577 - SOFTWARE ENGINEERING - THEORIES AND PRINCIPLES</th>
+            <th colspan=1 rowspan=1 bgcolor="#CCCCFF">A+</th>
+            
+        </tr>
+    
+        <tr>
+            <th colspan=1 rowspan=1 bgcolor="#FFBB99">5</th>
+            <th colspan=1 rowspan=1 bgcolor="#C0C0C0">CSC584 - ENTERPRISE PROGRAMMING</th>
+            <th colspan=1 rowspan=1 bgcolor="#CCCCFF">A+</th>
+            
+        </tr>
+
+        <tr>
+            <th colspan=1 rowspan=1 bgcolor="#FFBB99">6</th>
+            <th colspan=1 rowspan=1 bgcolor="#C0C0C0">CTU554 - VALUES AND CIVILIZATION II</th>
+            <th colspan=1 rowspan=1 bgcolor="#CCCCFF">A</th>
+            
+        </tr>
+
+        <tr>
+            <th colspan=1 rowspan=1 bgcolor="#FFBB99">7</th>
+            <th colspan=1 rowspan=1 bgcolor="#C0C0C0">ELC650 - ENGLISH FOR PROFESSIONAL INTERACTION</th>
+            <th colspan=1 rowspan=1 bgcolor="#CCCCFF">A-</th>
+            
+        </tr>
+
+        <tr>
+            <th colspan=1 rowspan=1 bgcolor="#FFBB99">8</th>
+            <th colspan=1 rowspan=1 bgcolor="#C0C0C0">TMC451 - INTRODUCTORY MANDARIN (LEVEL II)</th>
+            <th colspan=1 rowspan=1 bgcolor="#CCCCFF">A-</th>
+            
+        </tr>
+        </table>
+        <!-- End Expect result Section -->
+    </div>
+  
+
+
+
+    <!-- Footer -->
+    <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge w3-center">
+      <a href="https://www.facebook.com/harris.irman.9" target="_blank"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+      <a href="https://www.instagram.com/harris_irman/" target="_blank"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+      <a href="https://twitter.com/harris_irman" target="_blank"><i class="fa fa-twitter w3-hover-opacity"></i></a>
+      <a href="https://github.com/harrisirman" target="_blank"><i class="fa fa-github w3-hover-opacity"></i></a>
+      <a href="https://wa.link/d8f" target="_blank"><i class="fa fa-whatsapp w3-hover-opacity"></i></a>
+      <a href="https://msng.link/o/?harrisirm=tg" target="_blank"><i class="fa fa-telegram w3-hover-opacity"></i></a>
+      <a href="mailto:harrisayeh0@gmail.com"><i class="fa fa-envelope-open w3-hover-opacity"></i></a>
+    <!-- End footer -->
+    </footer>
+  
+  <!-- END PAGE CONTENT -->
+
+
+
+
+</div>
+</body>
+</html>
